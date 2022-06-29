@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Map Animation</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="./Bus Stop Tracker.css" rel="stylesheet" />
+</head>
+
+<body>
+    <ul>
+        <li><a href="Portfolio Home Site.html">Home</a></li>
+        <li><a href="https://github.com/kincaidtyler">My GitHub Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">My School Works</a>
+            <div class="dropdown-content">
+              <a href="Eyes.html">Eyes Project</a>
+              <a href="PacMan Factory.html">PacMan Factory</a>
+              <a href="Bus Stop Tracker.html">Bus Stop Tracker</a>
+            </div>
+            <input class="searchbar" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    <div id="map"></div>
+    <div class="map-overlay top">
+        <button onclick="move()">
+            Show stops between MIT and Harvard
+        </button>
+    </div>
+    <script src="./Bus Stop Tracker.js"></script>
+</body>
+
+</html>
